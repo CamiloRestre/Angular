@@ -1,3 +1,5 @@
+// Ejercicio 1: Mostrar un nombre enviado desde el padre
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,18 +9,20 @@ import { Component } from '@angular/core';
 })
 export class PadreComponent {
   contador: number = 0;
-  mensajepadre= "este es el mensaje del padre";
-  decrementar(){
+  nombreParaHijo: string = 'Cristian';  // Nombre enviado al hijo
+  nombre: string = 'Camilo';            // Nuevo nombre para el ejercicio 1
+  mensajepadre = "este es el mensaje del padre";
+  
+  decrementar() {
     this.contador--;
-
   }
-  incrementar(){
+  
+  incrementar() {
     this.contador++;
   }
 
   mensajeRecibido: string = '';
-  recibirMensaje($event : string) {
+  recibeMensaje($event: string) {
     this.mensajeRecibido = $event;
   }
-
 }
