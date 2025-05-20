@@ -9,4 +9,21 @@
 
 <h5>Mensaje recibido del hijo es : {{ mensajeRecibido }}</h5>
 
+<!-- Ejercicio 3: Comunicacion bidireccional -->
+
+
+<div class="padre-container">
+    <h2>Ejercicio 3: Comunicación Bidireccional</h2>
+    <p>Contador en Padre: {{ contador }}</p>
+
+    <app-hijo
+        [nombre]="nombre"
+        [contadorInicial]="contador"
+        (contadorActualizado)="actualizarContador($event)"
+        (mensajeDesdeHijo)="recibeMensaje($event)">
+    </app-hijo>
+
+    <h5>Mensaje recibido del hijo: {{ mensajeRecibido }}</h5>
+</div>
+
 
