@@ -24,6 +24,9 @@ export class HijoComponent {
   }
 
   enviarMensaje() {
-    this.mensajeDesdeHijo.emit(this.mensaje);
+    if (this.mensaje.trim() !== '') {
+      this.mensajeDesdeHijo.emit(this.mensaje);
+      this.mensaje = ''; // Ejercicio 2
+    }
   }
 }
