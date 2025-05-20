@@ -7,7 +7,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   templateUrl: './hijo.component.html'
 })
 export class HijoComponent {
-  @Input() nombre: string = '';  // Agregamos el Input nombre
+  @Input() nombre: string = '';  // Ejercicio 1
   contador: number = 0;
   mensaje: string = '';
 

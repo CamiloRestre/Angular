@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class PadreComponent {
   contador: number = 0;
-  nombreParaHijo: string = 'Cristian';  // Nombre enviado al hijo
+  nombreParaHijo: string = 'Cristian';  // Nombre enviado al hijo ejercicio 1 
   nombre: string = 'Camilo';            // Nuevo nombre para el ejercicio 1
   mensajepadre = "este es el mensaje del padre";
   
